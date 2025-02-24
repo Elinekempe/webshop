@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Your Cart - MysterySnackBox</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="cart.js"></script>
+    <script src="checkLogin.js"></script>
+    <script src="auth.js"></script> <!-- Verplaats de login-functionaliteit naar auth.js -->
+    <script src="homepage.js"></script>
+</head> 
+<body>
+    <div id="added-to-cart-message"></div>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html">MysterySnackBox</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Page 1</a></li>
+                <li><a href="#">Page 2</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li id="signup-link"><a href="auth/signin.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li id="login-link"><a href="auth/login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                <li id="cart-count"><a href="cart.html"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li id="user-info" style="display: none;">
+                    <a href="auth/dashboard.html"><span class="glyphicon glyphicon-user"></span> Welcome, <span id="username-display"></span></a>
+                </li>
+                <li id="logout" style="display: none;">
+                    <a href="#"><span class="glyphicon glyphicon-log-out"></span> Logout</a>
+                </li>
+            </ul>
+            
+        </div>
+    </nav>
+    
+    <div class="container">
+        <h2>Your Shopping Cart</h2>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody id="cart-items"></tbody>
+        </table>
+        <div class="text-right">
+            <strong>Total: $<span id="total-price">0.00</span></strong>
+        </div>
+
+        <div class="text-right">
+            <a href="checkout.html" id="checkout-btn" class="btn btn-primary">Afrekenen</a>
+        </div>
+        
+        <div id="order-confirmation" class="alert alert-success" style="display: none; margin-top: 20px;">
+            <strong>Bestelling geplaatst!</strong> Bedankt voor je aankoop. Je ontvangt een bevestigingsmail.
+        </div>
+    </div>
+</body>
+</html>
