@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Toevoegen</title>
+    <link rel="stylesheet" href="../style.css"> <!-- Extern CSS bestand -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-4">
+        <h2>Voeg een nieuw product toe</h2>
+        <form id="addProductForm">
+            <div class="form-group">
+                <label for="productId">ID</label>
+                <input type="number" class="form-control" id="productId" placeholder="Product ID" required>
+            </div>
+            <div class="form-group">
+                <label for="productName">Naam</label>
+                <input type="text" class="form-control" id="productName" placeholder="Product naam" required>
+            </div>
+            <div class="form-group">
+                <label for="productDescription">Beschrijving</label>
+                <textarea class="form-control" id="productDescription" placeholder="Product beschrijving" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="productPrice">Prijs</label>
+                <input type="number" class="form-control" id="productPrice" placeholder="Product prijs" required>
+            </div>
+            <div class="form-group">
+                <label for="productImage">Afbeelding (Upload bestand)</label>
+                <input type="file" class="form-control" id="productImage" accept="image/*" required>
+                <img id="imagePreview" src="" alt="Image preview" style="max-width: 200px; margin-top: 10px; display: none;">
+            </div>
+            <div class="form-group">
+                <label for="productCategory">Categorieën (gescheiden door komma's)</label>
+                <input type="text" class="form-control" id="productCategory" placeholder="Categorieën" required>
+            </div>
+            <button type="submit" class="btn btn-success">Product Toevoegen</button><br>
+            <a href="products.html" class="btn btn-danger mt-3">Terug naar producten</a>
+
+        </form>
+    </div>
+
+    <script src="add_product.js"></script> <!-- Extern JS bestand -->
+</body>
+</html>
