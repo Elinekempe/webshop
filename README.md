@@ -4,6 +4,15 @@ Welkom bij de documentatie van de MisterySnackBox. Deze webshop is een platform 
 
 Via deze link kom je bij de website: https://elinekempe.github.io/webshop.github.io/The-Webshop-08a1978eafef-09b87e11fc3a/
 
+## Wachtwoorden:
+gebruikerspagina:
+Username: elinekempe
+Wachtwoord: talland
+
+adminpagina:
+Username: admin
+Wachtwoord: 1234
+
 ## Vereisten
 
 - **HTML5**: De structuur van de webshop is gebouwd met HTML5.
